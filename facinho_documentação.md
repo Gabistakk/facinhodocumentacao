@@ -1,6 +1,6 @@
 # Documentação Falhas da Facinho Smurfs
 
-Com a minha busca na por falhas na [https://facinhosmurfs.com.br](facinhosmurfs.com.br) achei diversas aberturas e falhas, dentre elas:
+Com a minha busca na por falhas na [httfacinhosmurfs.com.br](https://facinhosmurfs.com.br) achei diversas aberturas e falhas, dentre elas:
 * Apis Abertas
 * Paginas e Arquivos JS abertas.
 * Mysql e Tela de Login do Dashboard de Admin abertas.
