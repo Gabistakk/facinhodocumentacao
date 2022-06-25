@@ -1,0 +1,46 @@
+rascunho de doc
+
+links:
+https://www.facinhosmurfs.com.br/js/produtos.js: import { validateEmail, translateSkinType } from '../pages/dashboard/js/utils.js' aqui eu achei aquele dashboard
+https://www.facinhosmurfs.com.br/pages/dashboard/index
+#####3
+https://www.facinhosmurfs.com.br/dashboard/default-login
+
+https://www.facinhosmurfs.com.br/api/cupomExiste/JUBSZ10
+
+https://191.6.210.141/phpinfo.php
+
+http://mysql.facinhosmurfs.com.br/login.php
+mysql dos cara ai loooll
+
+
+TEORIAS DA CONSPIRAÇÃO:
+
+n ta completo, mas se eu conseguir dar bypass na api eu acho q pega os dados
+
+https://www.facinhosmurfs.com.br/dashboard/default-login
+eles tem esse deles
+
+quando for mexer no dashboard tem q mudar a api pra /api/DashBoard
+
+
+primeiramente a maioria das info das apis deles são abertas, como por exemplo:
+https://www.facinhosmurfs.com.br/api/cupomExiste/JUBSZ10
+nessa api ele tem até a quantidade de vezes que foi usada, provavelmente da pra dar um header bypass e alterar alguns dados.
+
+dentro do servidor deles eles guardaram uma dashboard base para importar para a que eles real usam
+https://www.facinhosmurfs.com.br/pages/dashboard/index
+essa dashboard vem com as requests de apis erradas, então ele vai dar 404 no GET, alterando o "backend/getDashboard" para "api/Dashboard" o erro vai para 401, então eu creio que da para dar outro header bypass ai
+
+outra falha é que facilmente com alguns scripts achei o subdominio do mysql com a port aberta
+http://mysql.facinhosmurfs.com.br/login.php
+(tacar um nmap nesse url para mais infos)
+aqui creio que da pra dar um bruteforce
+
+como dito anteriormente eles tem um dashboard fechado e é esse aqui
+https://www.facinhosmurfs.com.br/dashboard/default-login
+se vc poe o ip onde está hospedado a facinho no user ele n da erro, apenas não entra acho que isso pode ser algum indicativo
+
+e por fim um arquivo de php aberto
+https://191.6.210.141/phpinfo.php
+dando dados como as variaveis que estão no php e a versão das coisas q estão rodando
