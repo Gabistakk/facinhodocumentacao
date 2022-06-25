@@ -6,7 +6,6 @@ Com a minha busca na por falhas na [facinhosmurfs.com.br](https://facinhosmurfs.
 * Mysql e Tela de Login do Dashboard de Admin abertas.
 * Front end base abertas.
 
-
 ## Apis abertas.
 Uma simples vasculhada com o BurpSuite na página inicial da facinho, conseguimos perceber algumas apis com informações confidenciais sendo disponibilizadas para o usuário.
 Um exemplo seria as informações do cupom de desconto:
